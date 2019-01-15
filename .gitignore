@@ -1,0 +1,35 @@
+# project release file
+/*.war
+
+# plugin release file
+/*.zip
+/*.zip.sha1
+
+#.gitignore for java
+*.class
+
+# .gitignore for maven 
+/target/*
+target/
+*.releaseBackup
+.settings/
+.idea/
+.externalToolBuilders/
+
+# IDE support files
+/.classpath
+/.launch
+/.project
+/.settings
+/*.launch
+/*.tmproj
+/ivy*
+/eclipse
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.log.*
+/bin/

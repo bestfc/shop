@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleBrand
+ * Version: 5.0
+ */
+
+/* ---------- BrandList ---------- */
+
+.brandList .list {
+	padding: 0px 9px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+}
+
+.brandList .list li {
+	width: 194px;
+	height: 80px;
+	float: left;
+	text-align: center;
+	border-bottom: solid 1px #eeeeee;
+}
+
+.brandList .list li:hover {
+	border-bottom-color: #dddddd;
+}
+
+.brandList .list li.last {
+	border-bottom: none;
+}
+
+.brandList .list li a {
+	outline: none;
+	blr: expression(this.hideFocus = true);
+}
+
+.brandList .list li img {
+	width: 97px;
+	height: 50px;
+}
+
+.brandList .list li span {
+	line-height: 20px;
+	display: block;
+	text-align: center;
+}
+
+.brandList .list dl {
+	line-height: 30px;
+	padding: 10px;
+}
+
+.brandList .list dt {
+	color: #843d11;
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* ---------- BrandContent ---------- */
+
+.brandContent .top {
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	border: solid 1px #e4e4e4;
+}
+
+.brandContent .top img {
+	width: 97px;
+	height: 50px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+.brandContent .top strong {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.brandContent .top a {
+	color: #aaaaaa;
+}
+
+.brandContent .introduction {
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.brandContent .product {
+	height: 36px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.brandContent .product dl {
+	height: 30px;
+	line-height: 30px;
+	padding: 2px 1px;
+	border: 1px solid #dddddd;
+}
+
+.brandContent .product dt {
+	float: left;
+	padding: 0px 20px;
+	background-color: #f4f4f4;
+}
+
+.brandContent .product dd {
+	float: left;
+	padding: 0px 20px;
+	border-right: 1px solid #e6e6e6;
+}

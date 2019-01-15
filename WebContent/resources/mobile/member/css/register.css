@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleRegister
+ * Version: 5.0
+ */
+
+/* ---------- Register ---------- */
+.register main {
+	padding: 10px;
+	margin-top: 40px;
+}
+
+.register main a {
+	line-height: 50px;
+}

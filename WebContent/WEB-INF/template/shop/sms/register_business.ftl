@@ -1,0 +1,1 @@
+尊敬的商家，您的账号${business.username}已注册成功，感谢您对${setting.siteName}的信任与支持！

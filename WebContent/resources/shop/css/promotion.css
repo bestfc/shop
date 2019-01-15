@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StylePromotion
+ * Version: 5.0
+ */
+
+/* ---------- Promotion ---------- */
+
+.promotion .content {
+	line-height: 30px;
+}
+
+.promotion .content .title {
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.promotion .content .info {
+	line-height: 30px;
+	margin-bottom: 10px;
+	color: #787878;
+	text-align: center;
+	border-bottom: solid 1px #f1f1f1;
+}

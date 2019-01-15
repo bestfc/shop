@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleIndex
+ * Version: 5.0
+ */
+
+/* ---------- Index ---------- */
+.index header {
+	width: 100%;
+	line-height: 30px;
+	padding: 5px 0px;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	background: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.index header .glyphicon-th-large {
+	line-height: 26px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.index header .search-placeholder {
+	padding: 0px 10px;
+	color: #999999;
+	opacity: 0.9;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+
+.index header .search-placeholder .glyphicon-search {
+	line-height: 30px;
+	float: right;
+}
+
+.index header .login {
+	display: none;
+	color: #ffffff;
+}
+
+.index header .member {
+	display: none;
+}
+
+.index header .fa-user-o {
+	line-height: 26px;
+	color: #ffffff;
+	font-size: 18px;
+	opacity: 0.9;
+}
+
+.index header .search {
+	width: 100%;
+	display: none;
+	padding: 5px;
+	position: fixed;
+	top: 0px;
+	z-index: 200;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	border-bottom: solid 1px #dddddd;
+	background-color: #ffffff;
+}
+
+.index header .search .glyphicon {
+	color: #aaaaaa;
+}
+
+.index header .search .hot-search dt {
+	line-height: 36px;
+	color: #aaaaaa;
+}
+
+.index header .search .hot-search dd {
+	display: inline;
+}
+
+.index header .search .hot-search dd a {
+	padding: 3px 6px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	color: #bbbbbb;
+	white-space: nowrap;
+	border: solid 1px #bbbbbb;
+	border-radius: 3px;
+}
+
+.index main {
+	margin-bottom: 30px;
+}
+
+.index .masthead {
+	margin-bottom: 10px;
+}
+
+.index .masthead .carousel-indicators {
+	bottom: 0px;
+}
+
+.index .masthead .carousel-indicators li {
+	width: 16px;
+	height: 3px;
+	margin: 0px;
+	border: none;
+	border-radius: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.index .masthead .carousel-indicators li.active {
+	width: 16px;
+	height: 3px;
+	background-color: #ffffff;
+}
+
+.index nav {
+	margin-bottom: 10px;
+}
+
+.index nav a {
+	font-size: 12px;
+}
+
+.index nav img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 10px auto 0px auto;
+}
+
+.index .promotion {
+	margin-bottom: 10px;
+}
+
+.index .promotion .glyphicon-gift {
+	line-height: 34px;
+	font-size: 24px;
+}
+
+.index .promotion li {
+	line-height: 18px;
+}
+
+.index .promotion li em {
+	display: block;
+}
+
+.index .ad {
+	margin-bottom: 10px;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+.index .ad ul {
+	width: 2000px;
+}
+
+.index .ad li {
+	float: left;
+	border: 1px solid #eeeeee;
+	border-left: none;
+}
+
+.index .ad img {
+	width: 160px;
+	height: 100px;
+}
+
+.index .products {
+	overflow: hidden;
+}
+
+.index .products .panel-heading {
+	text-align: center;
+	border-bottom: none;
+	background-color: #fafafa;
+}
+
+.index .products .thumbnail {
+	height: 200px;
+}
+
+.index .products .thumbnail img {
+	max-height: 120px;
+}
+
+.index .products .thumbnail h4 {
+	line-height: 30px;
+}
+
+.index .products .thumbnail strong {
+	line-height: 30px;
+	diaplay: block;
+	font-size: 16px;
+}
+
+.index footer .active, .index footer .active a {
+	color: #3190e8;
+}
+
+.index footer .active .glyphicon {
+	color: #3190e8;
+}

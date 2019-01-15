@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleArticle
+ * Version: 5.0
+ */
+
+/* ---------- ArticleDetail ---------- */
+.article-detail header {
+	line-height: 34px;
+	padding: 5px 0px;
+}
+
+.article-detail header .menu a {
+	color: #999999;
+}
+
+.article-detail header .menu ul {
+	right: 0px;
+	left: auto;
+}
+
+.article-detail header .menu ul li a span {
+	margin-right: 10px;
+}
+
+.article-detail main {
+	margin-top: 45px;
+}
+
+.article-detail main h1 {
+	line-height: 60px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.article-detail main .summary {
+	line-height: 20px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.article-detail main .summary span {
+	margin-right: 10px;
+}
+
+.article-detail main article {
+	line-height: 30px;
+	padding: 5px;
+	color: #666666;
+}
+
+/* ---------- ArticleList ---------- */
+.article-list header {
+	line-height: 34px;
+	padding: 5px 0px;
+}
+
+.article-list header .menu a {
+	color: #999999;
+}
+
+.article-list header .menu ul {
+	right: 0px;
+	left: auto;
+}
+
+.article-list header .menu ul li a span {
+	margin-right: 10px;
+}
+
+.article-list main {
+	margin-top: 45px;
+}
+
+.article-list .list li {
+	padding: 5px;
+	border-top: solid 1px #f1f1f1;
+}
+
+.article-list .list li:first-child {
+	border-top: none;
+}
+
+.article-list .list strong {
+	line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.article-list .list p {
+	line-height: 30px;
+	color: #999999;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.article-list .list span {
+	line-height: 20px;
+	font-size: 12px;
+}

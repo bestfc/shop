@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:cache="http://www.springframework.org/schema/cache" xmlns:task="http://www.springframework.org/schema/task" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+	http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.3.xsd
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd"
+	default-lazy-init="true">
+
+	<context:property-placeholder location="classpath*:/shopxx.properties" ignore-resource-not-found="true" ignore-unresolvable="true" />
+
+	<context:component-scan base-package="net.shopxx">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driver}" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialPoolSize" value="${connection_pools.initial_pool_size}" />
+		<property name="minPoolSize" value="${connection_pools.min_pool_size}" />
+		<property name="maxPoolSize" value="${connection_pools.max_pool_size}" />
+		<property name="maxIdleTime" value="${connection_pools.max_idle_time}" />
+		<property name="acquireIncrement" value="${connection_pools.acquire_increment}" />
+		<property name="checkoutTimeout" value="${connection_pools.checkout_timeout}" />
+	</bean>
+
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan" value="net.shopxx.entity" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+				<property name="showSql" value="true" />
+				<property name="generateDdl" value="true" />
+			</bean>
+		</property>
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.region.factory_class">${hibernate.cache.region.factory_class}</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+				<prop key="hibernate.connection.isolation">2</prop>
+				<prop key="hibernate.connection.release_mode">on_close</prop>
+				<prop key="javax.persistence.validation.mode">none</prop>
+				<prop key="hibernate.search.analyzer">net.shopxx.AnsjAnalyzer</prop>
+				<prop key="hibernate.search.default.directory_provider">filesystem</prop>
+				<prop key="hibernate.search.default.indexBase">${java.io.tmpdir}/shopxx_index</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+		<property name="transactionManager" ref="transactionManager" />
+	</bean>
+
+	<bean id="readOnlyTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="readOnly" value="true" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation" value="classpath:/ehcache.xml" />
+		<property name="shared" value="true" />
+	</bean>
+
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+		<property name="cacheManager" ref="ehCacheManager" />
+	</bean>
+
+	<cache:annotation-driven cache-manager="cacheManager" />
+
+	<bean class="org.springframework.cache.ehcache.EhCacheFactoryBean" lazy-init="false">
+		<property name="cacheManager" ref="ehCacheManager" />
+		<property name="cacheName" value="articleHits" />
+		<property name="cacheEventListeners">
+			<ref bean="cacheEventListener" />
+		</property>
+	</bean>
+
+	<bean class="org.springframework.cache.ehcache.EhCacheFactoryBean" lazy-init="false">
+		<property name="cacheManager" ref="ehCacheManager" />
+		<property name="cacheName" value="productHits" />
+		<property name="cacheEventListeners">
+			<ref bean="cacheEventListener" />
+		</property>
+	</bean>
+
+	<bean id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPaths">
+			<array>
+				<value>classpath:/</value>
+				<value>${template.loader_path}</value>
+			</array>
+		</property>
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">0</prop>
+				<prop key="default_encoding">${template.encoding}</prop>
+				<prop key="url_escaping_charset">${url_escaping_charset}</prop>
+				<prop key="output_format">HTMLOutputFormat</prop>
+				<prop key="template_update_delay">${template.update_delay}</prop>
+				<prop key="tag_syntax">auto_detect</prop>
+				<prop key="classic_compatible">true</prop>
+				<prop key="number_format">${template.number_format}</prop>
+				<prop key="boolean_format">${template.boolean_format}</prop>
+				<prop key="datetime_format">${template.datetime_format}</prop>
+				<prop key="date_format">${template.date_format}</prop>
+				<prop key="time_format">${template.time_format}</prop>
+				<prop key="object_wrapper">freemarker.ext.beans.BeansWrapper</prop>
+			</props>
+		</property>
+		<property name="freemarkerVariables">
+			<map>
+				<entry key="base" value="#{servletContext.contextPath}" />
+				<entry key="showPowered" value="#{${show_powered}}" />
+				<entry key="message" value-ref="messageMethod" />
+				<entry key="abbreviate" value-ref="abbreviateMethod" />
+				<entry key="currency" value-ref="currencyMethod" />
+				<entry key="flash_message" value-ref="flashMessageDirective" />
+				<entry key="pagination" value-ref="paginationDirective" />
+				<entry key="seo" value-ref="seoDirective" />
+				<entry key="ad_position" value-ref="adPositionDirective" />
+				<entry key="member_attribute_list" value-ref="memberAttributeListDirective" />
+				<entry key="business_attribute_list" value-ref="businessAttributeListDirective" />
+				<entry key="navigation_list" value-ref="navigationListDirective" />
+				<entry key="friend_link_list" value-ref="friendLinkListDirective" />
+				<entry key="brand_list" value-ref="brandListDirective" />
+				<entry key="attribute_list" value-ref="attributeListDirective" />
+				<entry key="article_list" value-ref="articleListDirective" />
+				<entry key="article_category_root_list" value-ref="articleCategoryRootListDirective" />
+				<entry key="article_category_parent_list" value-ref="articleCategoryParentListDirective" />
+				<entry key="article_category_children_list" value-ref="articleCategoryChildrenListDirective" />
+				<entry key="article_tag_list" value-ref="articleTagListDirective" />
+				<entry key="product_list" value-ref="productListDirective" />
+				<entry key="product_count" value-ref="productCountDirective" />
+				<entry key="product_category_root_list" value-ref="productCategoryRootListDirective" />
+				<entry key="product_category_parent_list" value-ref="productCategoryParentListDirective" />
+				<entry key="product_category_children_list" value-ref="productCategoryChildrenListDirective" />
+				<entry key="store_product_category_root_list" value-ref="storeProductCategoryRootListDirective" />
+				<entry key="store_product_category_parent_list" value-ref="storeProductCategoryParentListDirective" />
+				<entry key="store_product_category_children_list" value-ref="storeProductCategoryChildrenListDirective" />
+				<entry key="product_tag_list" value-ref="productTagListDirective" />
+				<entry key="product_favorite" value-ref="productFavoriteDirective" />
+				<entry key="store_favorite" value-ref="storeFavoriteDirective" />
+				<entry key="review_list" value-ref="reviewListDirective" />
+				<entry key="consultation_list" value-ref="consultationListDirective" />
+				<entry key="promotion_list" value-ref="promotionListDirective" />
+				<entry key="promotion_plugin" value-ref="promotionPluginDirective" />
+				<entry key="order_count" value-ref="orderCountDirective" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="cacheSeconds" value="${message.cache_seconds}" />
+		<property name="useCodeAsDefaultMessage" value="true" />
+		<property name="basenames" value="${message.basenames}" />
+	</bean>
+
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver" />
+
+	<bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+		<property name="config">
+			<bean class="com.google.code.kaptcha.util.Config">
+				<constructor-arg>
+					<props>
+						<prop key="kaptcha.border">no</prop>
+						<prop key="kaptcha.image.width">${captcha.imageWidth}</prop>
+						<prop key="kaptcha.image.height">${captcha.imageHeight}</prop>
+						<prop key="kaptcha.textproducer.char.string">${captcha.charString}</prop>
+						<prop key="kaptcha.textproducer.char.length">${captcha.charLength}</prop>
+						<prop key="kaptcha.textproducer.char.space">${captcha.charSpace}</prop>
+						<prop key="kaptcha.textproducer.font.color">${captcha.fontColor}</prop>
+						<prop key="kaptcha.textproducer.font.size">${captcha.fontSize}</prop>
+						<prop key="kaptcha.noise.impl">com.google.code.kaptcha.impl.NoNoise</prop>
+						<prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>
+						<prop key="kaptcha.background.impl">net.shopxx.captcha.CaptchaBackground</prop>
+						<prop key="kaptcha.background.imagePath">${webapp.root}${captcha.background_image_path}</prop>
+					</props>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="captchaFilter" class="net.shopxx.captcha.CaptchaFilter" scope="prototype" />
+
+	<task:executor id="taskExecutor" pool-size="${task.pool_size}" queue-capacity="${task.queue_capacity}" />
+
+	<task:annotation-driven executor="taskExecutor" />
+
+	<bean id="timingAspect" class="org.perf4j.log4j.aop.TimingAspect" />
+	
+	
+	<import resource="classpath:applicationContext-shiro.xml"/>
+
+	<bean id="propertieUtil" class="net.shopxx.util.PropertiesUtil">
+		<property name="path" value="classpath:thirdparty.properties"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleRegister
+ * Version: 5.0
+ */
+
+/* ---------- Register ---------- */
+
+.register .wrap {
+	margin-bottom: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+.register .main {
+	padding-bottom: 20px;
+	border: 1px solid #d7d7d7;
+}
+
+.register .title {
+	height: 40px;
+	line-height: 40px;
+	color: #d8d8d8;
+	font-family: "Microsoft YaHei";
+	border-bottom: 1px dotted #ededed;
+}
+
+.register .title strong {
+	padding: 0px 10px;
+	color: #3164af;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.register table {
+	width: 640px;
+	float: left;
+	margin-top: 20px;
+}
+
+.register th {
+	width: 160px;
+	padding: 12px;
+	font-weight: normal;
+	text-align: right;
+}
+
+.register .submit {
+	width: 218px;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background-color: #f35957;
+}
+
+.register .submit:disabled {
+	cursor: not-allowed;
+	background-color: #dddddd;
+}
+
+.register .agreement {
+	height: 96px;
+	line-height: 24px;
+	padding: 0px 4px;
+	color: #999999;
+	overflow-y: scroll;
+	border: 1px solid #e6e6e6;
+}
+
+.register .login {
+	width: 260px;
+	float: right;
+	padding: 20px;
+	border-bottom: 2px solid #f2f2f2;
+	border-left: 2px solid #f2f2f2;
+	background-color: #fff8db;
+}
+
+.register .login dt {
+	line-height: 40px;
+	color: #f35957;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+.register .login dd {
+	line-height: 28px;
+	color: #565656
+}
+
+.register .login dd a {
+	color: #f35957
+}
+
+/* ---------- select ---------- */
+.register select { 
+	color: #777; 
+	background-color: #FFF; 
+	height: 30px; vertical-align: middle; 
+	*display: inline; 
+	padding: 0 4px; 
+	border: solid 1px #E6E9EE;
+	*zoom:1;
+}
+
+.register .list th {
+	height: 30px;
+	padding: 0px 4px;
+	color: #888888;
+	font-weight: normal;
+	text-align: right;
+	white-space: nowrap;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	background: url(../images/member.gif) 0px -120px repeat-x;
+}
+
+.productCategoryTd {
+	text-align: right;
+	line-height: 28px;
+	padding: 6px 6px 6px 0px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+/* ---------- Checkout ---------- */
+
+.step {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.step ul {
+	float: right;
+}
+
+.step li {
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-left: -15px;
+	_position: relative;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	background: url(../images/order.gif) 0px 0px no-repeat;
+}
+
+.step .current {
+	color: #ffffff;
+	background-position: -150px 0px;
+}
+
+/* ---------- tab ---------- */
+
+ul.tab {
+	height: 30px;
+	padding-left: 160px;
+	margin: 10px 0px 2px 0px;
+	background: url(../images/input.gif) 0px 0px repeat-x;
+}
+
+ul.tab li {
+	float: left;
+	margin-right: 6px;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+}
+
+ul.tab input {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #666666;
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: 0px;
+	background: url(../images/input.gif) 0px -30px no-repeat;
+}
+
+ul.tab input:hover {
+	color: #ff9b1f;
+}
+
+ul.tab input.current {
+	color: #2b2b2b;
+	font-weight: bold;
+	background: url(../images/input.gif) -120px -30px no-repeat;
+}

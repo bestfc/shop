@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleLogin
+ * Version: 5.0
+ */
+
+/* ---------- Login ---------- */
+
+.login .wrap {
+	margin-bottom: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+.login .main {
+	border: 1px solid #d7d7d7;
+}
+
+.login .title {
+	height: 40px;
+	line-height: 40px;
+	color: #d8d8d8;
+	font-family: "Microsoft YaHei";
+	border-bottom: 1px dotted #ededed;
+}
+
+.login .title strong {
+	padding: 0px 10px;
+	color: #3164af;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.login table {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.login th {
+	width: 100px;
+	padding: 12px;
+	font-weight: normal;
+	text-align: right;
+}
+
+.login td label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.login .submit {
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background-color: #f35957;
+}
+
+.login .submit:disabled {
+	cursor: not-allowed;
+	background-color: #dddddd;
+}
+
+.login .loginPlugin {
+	border-top: 1px dotted #dddddd;
+}
+
+.login .loginPlugin td {
+	padding: 12px 0px;
+}
+
+.login .loginPlugin td li {
+	float: left;
+	margin-right: 30px;
+}
+
+.login .loginPlugin td li img {
+	max-width: 30px;
+}
+
+.login .register {
+	background-color: #f5f5f5;
+}
+
+.login .register dt {
+	line-height: 40px;
+	color: #cc062d;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+}
+
+.login .register dd {
+	line-height: 30px;
+	color: #565656
+}
+
+.login .register dd a {
+	color: #3164af
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ *
+ * StyleProductCategory
+ * Version: 5.0
+ */
+
+/* ---------- ProductCategory ---------- */
+.product-category {
+	background-color: #fafafa;
+}
+
+.product-category main {
+	margin: 40px 0px;
+}
+
+.product-category main table {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.product-category main table tr {
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.product-category main table tr.last {
+	border-bottom: none;
+}
+
+.product-category main table th {
+	width: 90px;
+	height: 60px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	border: 3px solid #ffffff;
+	background-color: #f4f4f4;
+}
+
+.product-category main table tr:hover th {
+	background-color: #e4e4e4;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.product-category main table th {
+		height: 60px;
+	}
+}
+
+.product-category main table td a {
+	line-height: 40px;
+	padding: 0px 10px;
+	color: #666666;
+	white-space: nowrap;
+}
+
+.product-category footer {
+	padding: 3px 0px;
+}
+
+.product-category footer .active, .product-category footer .active a {
+	color: #3190e8;
+}
+
+.product-category footer .active .glyphicon {
+	color: #3190e8;
+}

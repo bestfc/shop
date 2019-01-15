@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* ----------StoreLeft ---------- */
+.storeLeft {
+	width: 188px;
+	float: left;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	border: 1px solid #dddddd;
+}
+
+.storeLeft .storeInfo h2 {
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	color: #333333;
+	font-size : 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #dddddd;
+}
+
+.storeLeft .storeInfo .logo {
+	width: 100%;
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.storeLeft .storeInfo strong {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.storeLeft .storeInfo strong em {
+	padding: 5px;
+	margin-left: 5px;
+	color: #ffffff;
+	border-radius: 5px;
+	background-color: #f35957;
+}
+
+.storeLeft .storeInfo p {
+	padding: 0px 10px;
+	margin-bottom: 10px;
+}
+
+.storeLeft .storeInfo p a {
+	height: 28px;
+	line-height: 28px;
+	display: block;
+	float: right;
+	padding: 0px 10px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+}
+
+.storeLeft .storeInfo p a:first-child {
+	float: left;
+}
+
+.storeLeft .instantMessage {
+	padding: 0px 10px;
+	margin-bottom: 10px;
+}
+
+.storeLeft .instantMessage a {
+	line-height: 35px;
+	margin-right: 10px;
+}
+
+.storeLeft .storeSearch {
+	padding: 0px 10px 10px 10px;
+}
+
+.storeLeft .storeSearch input {
+	width: 105px;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 5px;
+	border: 1px solid #dddddd;
+	border-right: none;
+}
+
+.storeLeft .storeSearch button {
+	width: 57px;
+	height: 29px;
+	color: #ffffff;
+	border: none;
+	background-color: #f35957;
+}
+
+.storeLeft .storeClassify dt {
+	line-height: 40px;
+	padding-left: 10px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.storeLeft .storeClassify dd a {
+	line-height: 40px;
+	display: block;
+	padding-left: 10px;
+	background-color: #fcfcfc;
+}
+
+.storeLeft .storeClassify dd a .caret {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: right;
+	cursor: pointer;
+	opacity: 0.3;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background: url(../images/classify.png) no-repeat 0px -40px;
+}
+
+.storeLeft .storeClassify dd a .caret.active {
+	background-position: 0px 0px;
+}
+
+.storeLeft .storeClassify li {
+	height: 40px;
+	position: relative;
+}
+
+.storeLeft .storeClassify li+li {
+	border-top: 1px solid #fafafa;
+}
+
+.storeLeft .storeClassify li a {
+	padding-left: 20px;
+	background-color: #ffffff;
+}
+
+.storeLeft .storeClassify li a:hover {
+	padding-left: 21px;
+	position: absolute;
+	top: 0px;
+	right: -1px;
+	left: -1px;
+	color: #ffffff;
+	background-color: #e61f19;
+}
+
+/* ---------- StoreRight ---------- */
+.storeRight {
+	width: 990px;
+	float: right;
+}
+
+.storeRight .storeBanner {
+	height: 360px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background: url(../bxslider/bx_loader.gif) 455px 175px no-repeat;
+}
+
+.storeRight .storeProductTag {
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	border: 1px solid #dddddd;
+	background-color: #fefefe;
+}
+
+.storeRight .storeProductTag div {
+	float: left;
+	height: 30px;
+	width: 30px;
+	overflow: hidden;
+	padding: 5px;
+	text-align: center;
+}
+
+.storeRight .storeProductTag div img {
+	max-width: 100%;
+}
+
+.storeRight .products {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.storeRight .products ul li {
+	width: 190px;
+	float: left;
+	border: 1px solid #ffffff;
+}
+
+.storeRight .products ul li:hover {
+	border: 1px solid #f35957;
+}
+
+.storeRight .products ul li p {
+	width: 170px;
+	min-height: 55px;
+	padding: 10px;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.storeRight .products ul li .price {
+	display: block;
+	width: 170px;
+	padding: 10px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #990505;
+	font-weight: bold;
+}
+
+.storeRight .products .productThumb {
+	width: 170px;
+	height: 170px;
+	padding: 10px;
+}

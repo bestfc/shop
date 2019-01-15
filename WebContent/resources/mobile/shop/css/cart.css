@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleCart
+ * Version: 5.0
+ */
+
+/* ---------- Cart ---------- */
+.cart-list header .active {
+	color: #dd0000;
+}
+
+.cart-list main {
+	margin: 40px 0px;
+}
+
+.cart-list main .title {
+	font-weight: bold;
+}
+
+.cart-list main .title em {
+	padding: 3px 5px;
+	border-radius: 3px;
+	color: #ffffff;
+	background-color: #e61f19;
+}
+
+.cart-list main .media-left .product-image {
+	width: 90px;
+	height: 90px;
+	display: block;
+	padding: 2px;
+	position: relative;
+	border: solid 1px #e8e8e8;
+}
+
+.cart-list main .media-left .product-image strong {
+	line-height: 20px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-list main .media-body {
+	line-height: 25px;
+}
+
+.cart-list main .media-body span {
+	display: block;
+}
+
+.cart-list main .media-body h4 a {
+	word-break: break-all;
+}
+
+.cart-list main .media-right .remove {
+	display: none;
+	margin-bottom: 10px;
+	color: #dd0000;
+	background-color: #ffffff;
+}
+
+.cart-list main .media-right .spinner {
+	width: 90px;
+}
+
+.cart-list main .media-right .spinner .input-group-addon {
+	width: 40px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #fefefe;
+}
+
+.cart-list main .media-right .spinner input {
+	width: 40px;
+	padding: 0px 5px;
+	text-align: center;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.cart-list main .gift, .cart-list main .promotion {
+	padding: 0px 10px;
+	margin-bottom: 10px;
+}
+
+.cart-list main .gift dl, .cart-list main .promotion dl {
+	font-size: 12px;
+}
+
+.cart-list main .gift dt, .cart-list main .promotion dt {
+	float: left;
+	padding: 0px 5px;
+	margin-right: 10px;
+	color: #dd0000;
+	font-weight: normal;
+	border-radius: 3px;
+	border: solid 1px #dd0000;
+}
+
+.cart-list main .gift dd, .cart-list main .promotion dd {
+	line-height: 20px;
+	float: left;
+	margin-right: 10px;
+	color: #cccccc;
+}
+
+.cart-list main p {
+	line-height: 60px;
+	text-align: center;
+}
+
+.cart-list main p a {
+	color: #aaaaaa;
+}
+
+.cart-list footer .clear {
+	display: none;
+}

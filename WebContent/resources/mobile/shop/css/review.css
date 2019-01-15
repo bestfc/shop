@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ *
+ * StyleReview
+ * Version: 5.0
+ */
+
+/* ---------- AddReview ---------- */
+.add-review main {
+	padding: 50px 10px 0px 10px;
+}
+
+.add-review main .media {
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.add-review main .media .media-left a img {
+	width: 80px;
+	height: 80px;
+	padding: 2px;
+	border: solid 1px #e8e8e8;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.add-review main .media .media-body span {
+	display: block;
+}
+
+.add-review main .star-rating a {
+	width: 23px;
+	height: 22px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	text-indent: -999em;
+	background: url(../images/review.gif) -30px -30px no-repeat;
+}
+
+.add-review main .star-rating-hover a {
+	background-position: -60px -30px;
+}
+
+.add-review main .star-rating-on a {
+	background-position: -90px -30px;
+}
+
+.add-review main .tips {
+	line-height: 22px;
+	margin-left: 10px;
+}

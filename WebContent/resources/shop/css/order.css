@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleOrder
+ * Version: 5.0
+ */
+
+/* ---------- Checkout ---------- */
+
+.checkout .step {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.checkout .step ul {
+	float: right;
+}
+
+.checkout .step li {
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-left: -15px;
+	_position: relative;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	background: url(../images/order.gif) 0px 0px no-repeat;
+}
+
+.checkout .step .current {
+	color: #ffffff;
+	background-position: -150px 0px;
+}
+
+.checkout .receiver {
+	margin-bottom: 10px;
+	border-top: solid 1px #e8e8e8;
+}
+
+.checkout .receiver .title {
+	line-height: 36px;
+	padding-left: 6px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.checkout .receiver ul {
+	height: 100px;
+	margin-right: -12px;
+	_zoom: 1;
+	overflow: hidden;
+}
+
+.checkout .receiver li {
+	width: 210px;
+	height: 80px;
+	_display: inline;
+	float: left;
+	padding: 4px 8px;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	border: solid 1px #e4e4e4;
+}
+
+.checkout .receiver li:hover {
+	border: solid 1px #fee580;
+	background-color: #ffffff;
+}
+
+.checkout .receiver li.selected {
+	border: solid 1px #f35957;
+	background: url(../images/order.gif) right bottom #ffffff no-repeat;
+}
+
+.checkout .receiver li span {
+	line-height: 20px;
+	display: block;
+}
+
+.checkout .receiver li strong {
+	color: #333333;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.checkout .newReceiver {
+	width: 800px;
+	padding: 8px;
+	margin-left: -408px;
+	position: fixed;
+	_position: absolute;
+	top: 25%;
+	_top: expression(documentElement.scrollTop + Math.round(documentElement.offsetHeight * 0.25));
+	left: 50%;
+	z-index: 100;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr = #19000000, endcolorstr = #19000000);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.checkout .newReceiver table {
+	width: 100%;
+	margin-bottom: 0px;
+	border: solid 1px #bbbbbb;
+	background-color: #ffffff;
+}
+
+.checkout .newReceiver th {
+	font-weight: normal;
+	text-align: right;
+	background-color: #ffffff;
+}
+
+.checkout table {
+	width: 100%;
+	margin-bottom: 10px;
+	border: solid 1px #e6e4e3;
+}
+
+.checkout th {
+	line-height: 36px;
+	padding: 0px 6px;
+	font-weight: normal;
+	text-align: left;
+	background-color: #fafafa;
+}
+
+.checkout td {
+	line-height: 30px;
+	padding: 6px;
+}
+
+.checkout .select {
+	margin-bottom: 8px;
+}
+
+.checkout .select dt {
+	line-height: 36px;
+	padding-left: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	border-top: solid 1px #e8e8e8;
+}
+
+.checkout .select dd {
+	padding: 4px;
+	margin-bottom: 2px;
+	border-top: solid 1px #f2f2f2;
+	border-right: solid 1px #ffffff;
+	border-bottom: solid 1px #ffffff;
+	border-left: solid 1px #ffffff;
+}
+
+.checkout .select dd label {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+	border: solid 3px #ffffff;
+}
+
+.checkout .select dd:hover {
+	padding: 0px;
+	border: solid 5px #f6b8b7;
+}
+
+.checkout .select dd:hover label {
+	border: solid 3px #ffffff;
+}
+
+.checkout .select dd.selected {
+	padding: 0px;
+	border: solid 5px #f35957;
+}
+
+.checkout .select dd.selected label {
+	border: solid 3px #ffffff;
+}
+
+.checkout .select dd input {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 6px;
+	margin-top: 9px;
+}
+
+.checkout .select dd span {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	color: #888888;
+}
+
+.checkout .select dd em {
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+	border: solid 1px #e5e5e5;
+}
+
+.checkout .select dd strong {
+	width: 100px;
+	height: 30px;
+	display: block;
+	float: left;
+	padding: 0px 8px;
+	font-weight: normal;
+	overflow: hidden;
+	border: solid 1px #e5e5e5;
+	background-color: #f8f8f8;
+}
+
+.checkout .sku td {
+	padding: 6px;
+	border: solid 1px #f1f1f1;
+}
+
+.checkout .sku img {
+	width: 60px;
+	height: 60px;
+}
+
+.checkout .memo {
+	height: 24px;
+	margin-bottom: 10px;
+}
+
+.checkout .memo dt {
+	width: 64px;
+	line-height: 24px;
+	float: left;
+	margin-right: 10px;
+	color: #999999;
+	text-align: right;
+}
+
+.checkout .memo dd {
+	float: left;
+}
+
+.checkout .memo input {
+	width: 174px;
+	height: 18px;
+	line-height: 18px;
+	padding: 2px;
+	border: 1px solid #dddddd;
+}
+
+.checkout .coupon {
+	height: 24px;
+	margin-bottom: 10px;
+}
+
+.checkout .coupon dt {
+	width: 64px;
+	line-height: 24px;
+	float: left;
+	margin-right: 10px;
+	color: #999999;
+	text-align: right;
+}
+
+.checkout .coupon dd {
+	width: 180px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	position: relative;
+	padding: 2px 0px;
+	margin-bottom: 10px;
+	background: url(../images/order.gif) 0px -30px no-repeat;
+}
+
+.checkout .coupon span {
+	width: 122px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0px 4px;
+	display: none;
+	position: absolute;
+	color: #ff6600;
+	overflow: hidden;
+}
+
+.checkout .coupon input {
+	width: 122px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0px 4px;
+	margin: 0px;
+	position: absolute;
+	color: #888888;
+	outline: none;
+	border: none;
+	background: none;
+}
+
+.checkout .coupon button {
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+	margin: 0px;
+	font-size: 12px;
+	position: relative;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background: none;
+}
+
+.checkout .statistic {
+	line-height: 30px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.checkout .statistic span {
+	margin-left: 10px;
+}
+
+.checkout .statistic em {
+	color: #ff6600;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.checkout .statistic strong {
+	color: #ef0101;
+	font-size: 20px;
+	vertical-align: bottom;
+}
+
+.checkout .statistic p {
+	color: #aaaaaa;
+}
+
+.checkout .statistic .balance {
+	width: 60px;
+	height: 18px;
+	line-height: 18px;
+	padding: 2px;
+	border: 1px solid #dddddd;
+}
+
+.checkout .bottom {
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 10px;
+	text-align: right;
+	overflow: hidden;
+	border: 1px solid #f1f1f1;
+	background-color: #fdfdfd;
+}
+
+.checkout .bottom .back {
+	margin-right: 10px;
+	font-family: "Microsoft YaHei";
+}
+
+.checkout .bottom .submit {
+	padding: 20px;
+	color: #ffffff;
+	font-family: "Microsoft YaHei";
+	background-color: #f35957;
+}
+
+.checkout .bottom .submit:hover {
+	background-color: #e61f19;
+}
+
+/* ---------- Payment ---------- */
+
+.payment .dialog {
+	width: 300px;
+	height: 200px;
+	line-height: 24px;
+	padding: 10px 60px;
+	margin-left: -216px;
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	z-index: 100;
+	color: #888888;
+	border: solid 6px #ededed;
+	background-color: #ffffff;
+}
+
+.payment .dialog dt {
+	line-height: 60px;
+	color: #000000;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+
+.payment .dialog div {
+	height: 34px;
+	padding: 10px 0px;
+}
+
+.payment .dialog div a {
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	float: left;
+	padding: 0px 14px;
+	margin-right: 30px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	background: url(../images/order.gif) -10px -60px no-repeat;
+}
+
+.payment .dialog div a:hover {
+	color: #ffead0;
+}
+
+.payment .result {
+	padding: 40px;
+	margin-bottom: 10px;
+	border: 1px solid #fecf97;
+	background-color: #fffbea;
+}
+
+.payment .result .title {
+	height: 50px;
+	line-height: 50px;
+	color: #cc0000;
+	font-size: 24px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+
+.payment .result table {
+	width: 100%;
+	line-height: 36px;
+	margin-bottom: 10px;
+}
+
+.payment .result th {
+	text-align: left;
+}
+
+.payment .result td {
+	padding: 0px 8px;
+	border: 1px solid #eeeeee;
+	background-color: #ffffff;
+}
+
+.payment .result strong {
+	color: #ff6600;
+	font-weight: bold;
+}
+
+.payment .result .paymentPlugin td {
+	padding: 4px;
+	border: none;
+	background-color: #fffbea;
+}
+
+.payment .result .paymentPlugin input {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-top: 9px;
+	margin-right: 6px;
+}
+
+.payment .result .paymentPlugin em {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	padding: 2px 8px;
+	color: #888888;
+	font-style: normal;
+	font-weight: normal;
+	overflow: hidden;
+	cursor: pointer;
+	border: solid 1px #dddddd;
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.payment .result .paymentPlugin em:hover {
+	border: solid 1px #e61f19;
+}
+
+.payment .result .paymentButton {
+	width: 150px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	cursor: pointer;
+	overflow: visible;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background: url(../images/order.gif) 0px -60px no-repeat;
+}
+
+.payment .result .paymentButton:hover {
+	color: #ffead0;
+}

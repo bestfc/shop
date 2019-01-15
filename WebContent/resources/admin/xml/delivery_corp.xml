@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shopxx>
+	<deliveryCorp name="AAE全球专递" url="http://cn.aaeweb.com" code="aae" />
+	<deliveryCorp name="安信达" code="anxindakuaixi" />
+	<deliveryCorp name="澳大利亚邮政" url="http://auspost.com.au" code="auspost" />
+	<deliveryCorp name="百福东方" url="http://www.ees.com.cn" code="baifudongfang" />
+	<deliveryCorp name="邦送物流" code="bangsongwuliu" />
+	<deliveryCorp name="BHT" code="bht" />
+	<deliveryCorp name="加拿大邮政" url="http://www.canadapost.ca" code="canpost" />
+	<deliveryCorp name="希伊艾斯" code="cces" />
+	<deliveryCorp name="传喜物流" url="http://www.cxcod.com" code="chuanxiwuliu" />
+	<deliveryCorp name="COE" url="http://www.coe.com.hk" code="coe" />
+	<deliveryCorp name="大田物流" url="http://www.dtw.com.cn" code="datianwuliu" />
+	<deliveryCorp name="德邦物流" url="http://www.deppon.com" code="debangwuliu" />
+	<deliveryCorp name="DHL" url="http://www.cn.dhl.com" code="dhl" />
+	<deliveryCorp name="递四方" url="http://www.4px.com" code="disifang" />
+	<deliveryCorp name="DPEX" url="http://www.szdpex.com.cn" code="dpex" />
+	<deliveryCorp name="D速物流" url="http://www.d-exp.cn" code="dsukuaidi" />
+	<deliveryCorp name="EMS" url="http://www.ems.com.cn" code="ems" />
+	<deliveryCorp name="Fedex" url="http://www.fedex.com/cn" code="fedexcn" />
+	<deliveryCorp name="飞豹快递" code="feibaokuaidi" />
+	<deliveryCorp name="飞康达物流" url="http://www.fkd.com.cn" code="feikangda" />
+	<deliveryCorp name="飞快达物流" url="http://www.fkd56.com" code="feikuaida" />
+	<deliveryCorp name="风行天下" code="fengxingtianxia" />
+	<deliveryCorp name="能达速递" url="http://www.nedaex.com" code="ganzhongnengda" />
+	<deliveryCorp name="GLS" code="gls" />
+	<deliveryCorp name="共速达" url="http://www.gongsuda.com" code="gongsuda" />
+	<deliveryCorp name="广东邮政" url="http://www.gdpost.com.cn" code="guangdongyouzhengwuliu" />
+	<deliveryCorp name="国通快递" url="http://www.gto365.com" code="guotongkuaidi" />
+	<deliveryCorp name="山东海红" url="http://www.haihongwangsong.com" code="haihongwangsong" />
+	<deliveryCorp name="海盟速递" url="http://www.hm-express.com" code="haimengsudi" />
+	<deliveryCorp name="海外环球" code="haiwaihuanqiu" />
+	<deliveryCorp name="河北建华" url="http://www.hebeijianhua.com" code="hebeijianhua" />
+	<deliveryCorp name="恒路物流" url="http://www.e-henglu.com" code="hengluwuliu" />
+	<deliveryCorp name="香港邮政" url="http://www.hongkongpost.hk" code="hkpost" />
+	<deliveryCorp name="华企快递" url="http://www.hqkd.cn" code="huaqikuaiyun" />
+	<deliveryCorp name="华夏龙" url="http://www.chinadragon56.com" code="huaxialongwuliu" />
+	<deliveryCorp name="汇强快递" code="huiqiangkuaidi" />
+	<deliveryCorp name="百世汇通" url="http://www.800bestex.com" code="huitongkuaidi" />
+	<deliveryCorp name="佳吉快运" url="http://www.jiaji.com" code="jiajiwuliu" />
+	<deliveryCorp name="嘉里大通" code="jialidatong" />
+	<deliveryCorp name="佳怡物流" url="http://www.jiayi56.com" code="jiayiwuliu" />
+	<deliveryCorp name="加运美速递" url="http://www.tms56.com" code="jiayunmeiwuliu" />
+	<deliveryCorp name="捷特快递" url="http://www.jet185.com" code="jietekuaidi" />
+	<deliveryCorp name="金大物流" url="http://www.szkingdom.com.cn" code="jindawuliu" />
+	<deliveryCorp name="京广速递" url="http://www.kke.com.hk" code="jinguangsudikuaijian" />
+	<deliveryCorp name="晋越快递" url="http://www.byondex.com" code="jinyuekuaidi" />
+	<deliveryCorp name="急先达物流" url="http://www.joust.net.cn" code="jixianda" />
+	<deliveryCorp name="康力物流" url="http://www.kangliex.com" code="kangliwuliu" />
+	<deliveryCorp name="快捷快递" url="http://www.fastexpress.com.cn" code="kuaijiesudi" />
+	<deliveryCorp name="跨越速运" url="http://www.ky-express.com" code="kuayue" />
+	<deliveryCorp name="蓝镖快递" code="lanbiaokuaidi" />
+	<deliveryCorp name="乐捷递" url="http://www.ljd365.com" code="lejiedi" />
+	<deliveryCorp name="联邦快递" url="http://www.fedex.com/cn" code="lianbangkuaidi" />
+	<deliveryCorp name="联昊通速递" url="http://www.lhtex.com.cn" code="lianhaowuliu" />
+	<deliveryCorp name="立即送" url="http://www.cdljs.com" code="lijisong" />
+	<deliveryCorp name="龙邦速递" url="http://www.lbex.com.cn" code="longbanwuliu" />
+	<deliveryCorp name="隆浪快递" code="longlangkuaidi" />
+	<deliveryCorp name="美国快递" url="http://www.us-ex.com" code="meiguokuaidi" />
+	<deliveryCorp name="门对门" url="http://www.szdod.com" code="menduimen" />
+	<deliveryCorp name="明亮物流" url="http://www.szml56.com" code="mingliangwuliu" />
+	<deliveryCorp name="新蛋奥硕物流" code="neweggozzo" />
+	<deliveryCorp name="OCS" url="http://www.ocschina.com" code="ocs" />
+	<deliveryCorp name="onTrac" url="http://www.ontrac.com" code="ontrac" />
+	<deliveryCorp name="全晨快递" url="http://www.qckd.net" code="quanchenkuaidi" />
+	<deliveryCorp name="全峰快递" url="http://www.qfkd.com.cn" code="quanfengkuaidi" />
+	<deliveryCorp name="全际通" code="quanjitong" />
+	<deliveryCorp name="全日通" url="http://www.at-express.com" code="quanritongkuaidi" />
+	<deliveryCorp name="全一快递" url="http://www.unitop-apex.com" code="quanyikuaidi" />
+	<deliveryCorp name="如风达" url="http://www.rufengda.com" code="rufengda" />
+	<deliveryCorp name="赛澳递" url="http://www.51cod.com" code="saiaodi" />
+	<deliveryCorp name="三态速递" url="http://www.sfcservice.com" code="santaisudi" />
+	<deliveryCorp name="七天连锁" code="sevendays" />
+	<deliveryCorp name="上大国际物流" url="http://www.sundapost.net" code="shangda" />
+	<deliveryCorp name="圣安物流" url="http://www.sa56.net" code="shenganwuliu" />
+	<deliveryCorp name="盛丰物流" url="http://www.sfwl.com.cn" code="shengfengwuliu" />
+	<deliveryCorp name="盛辉物流" url="http://www.shenghui56.com" code="shenghuiwuliu" />
+	<deliveryCorp name="申通快递" url="http://www.sto.cn" code="shentong" />
+	<deliveryCorp name="顺丰速运" url="http://www.sf-express.com" code="shunfeng" />
+	<deliveryCorp name="速尔快递" url="http://www.sure56.cn" code="suer" />
+	<deliveryCorp name="穗佳物流" url="http://www.suijiawl.com" code="suijiawuliu" />
+	<deliveryCorp name="红马甲物流" url="http://www.hmj.com.cn" code="sxhongmajia" />
+	<deliveryCorp name="天地华宇" url="http://www.hoau.net" code="tiandihuayu" />
+	<deliveryCorp name="天天快递" url="http://www.ttkdex.com" code="tiantian" />
+	<deliveryCorp name="TNT" url="http://www.tnt.com.cn" code="tnt" />
+	<deliveryCorp name="通和天下" url="http://www.cod56.com" code="tonghetianxia" />
+	<deliveryCorp name="UPS" url="http://www.ups.com/cn" code="ups" />
+	<deliveryCorp name="USPS" url="http://zh.usps.com" code="usps" />
+	<deliveryCorp name="万家物流" url="http://www.manco-logistics.com" code="wanjiawuliu" />
+	<deliveryCorp name="万象物流" url="http://www.ewinshine.com" code="wanxiangwuliu" />
+	<deliveryCorp name="微特派" url="http://www.vtepai.com" code="weitepai" />
+	<deliveryCorp name="新邦物流" url="http://www.xbwl.cn" code="xinbangwuliu" />
+	<deliveryCorp name="信丰物流" url="http://www.xf-express.com.cn" code="xinfengwuliu" />
+	<deliveryCorp name="亚风速递" url="http://www.broad-asia.net" code="yafengsudi" />
+	<deliveryCorp name="一邦速递" url="http://www.ebon-express.com" code="yibangwuliu" />
+	<deliveryCorp name="银捷速递" url="http://www.china-fec.com" code="yinjiesudi" />
+	<deliveryCorp name="一统飞鸿" code="yitongfeihong" />
+	<deliveryCorp name="优速快递" url="http://www.uc56.com" code="youshuwuliu" />
+	<deliveryCorp name="中国邮政" url="http://www.ems.com.cn" code="youzhengguonei" />
+	<deliveryCorp name="源安达" url="http://www.yadex.com.cn" code="yuananda" />
+	<deliveryCorp name="远成物流" url="http://www.ycgwl.com" code="yuanchengwuliu" />
+	<deliveryCorp name="原飞航物流" url="http://www.yfhex.com" code="yuanfeihangwuliu" />
+	<deliveryCorp name="圆通速递" url="http://www.yto.net.cn" code="yuantong" />
+	<deliveryCorp name="源伟丰快递" url="http://www.ywfex.com" code="yuanweifeng" />
+	<deliveryCorp name="元智捷诚" code="yuanzhijiecheng" />
+	<deliveryCorp name="越丰物流" url="http://www.yfexpress.com.hk" code="yuefengwuliu" />
+	<deliveryCorp name="韵达快递" url="http://www.yundaex.com" code="yunda" />
+	<deliveryCorp name="运通速运" url="http://www.ytkd168.com" code="yuntongkuaidi" />
+	<deliveryCorp name="宅急送" url="http://www.zjs.com.cn" code="zhaijisong" />
+	<deliveryCorp name="郑州建华" url="http://www.zzjhtd.com" code="zhengzhoujianhua" />
+	<deliveryCorp name="芝麻开门" url="http://www.zmkmex.com" code="zhimakaimen" />
+	<deliveryCorp name="中速快件" code="zhongsukuaidi" />
+	<deliveryCorp name="中天万运" url="http://www.wanyun56.cn" code="zhongtianwanyun" />
+	<deliveryCorp name="中通快递" url="http://www.zto.cn" code="zhongtong" />
+	<deliveryCorp name="忠信达" url="http://www.zhongxind.cn" code="zhongxinda" />
+	<deliveryCorp name="中邮物流" url="http://www.cnpl.com.cn" code="zhongyouwuliu" />
+</shopxx>

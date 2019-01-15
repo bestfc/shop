@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleIndex
+ * Version: 5.0
+ */
+
+/* ---------- Index ---------- */
+.index .box:hover {
+	border-top: 1px solid #0088ed;
+}
+
+.index .store-info .logo img {
+	max-width: 100px;
+	padding: 2px;
+	border: 1px solid #eeeeee;
+}
+
+.index .store-info p {
+	line-height: 30px;
+	color: #666666;
+}
+
+.index .order-info a {
+	min-width: 128px;
+	display: block;
+	float: left;
+	margin: 10px;
+	color: #666666;
+}
+
+.index .order-info a .img-circle {
+	width: 50px;
+	height: 50px;
+	line-height: 60px;
+	float: left;
+	margin-right: 10px;
+	color: #ffffff;
+	text-align: center;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.index .order-info a:hover .img-circle {
+	opacity: 0.5;
+}
+
+.index .order-info a .fa {
+	font-size: 25px;
+}
+
+.index .order-info a p {
+	color: #333333;
+}
+
+.index .product-info .box-body {
+	padding: 30px 20px;
+}
+
+.index .product-info .btn {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.index .product-info .btn .badge {
+	font-weight: normal;
+	background-color: #e01515;
+}

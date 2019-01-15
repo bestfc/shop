@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ *
+ * StyleConsultation
+ * Version: 5.0
+ */
+
+/* ---------- AddConsultation ---------- */
+.add-consultation main {
+	padding: 50px 10px 0px 10px;
+}
+
+.add-consultation main .media {
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.add-consultation main .media .media-left a img {
+	width: 80px;
+	height: 80px;
+	padding: 2px;
+	border: solid 1px #e8e8e8;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.add-consultation main .media .media-body span {
+	display: block;
+}

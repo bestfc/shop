@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleIndex
+ * Version: 5.0
+ */
+
+/* ---------- Index ---------- */
+
+* {
+	font: 12px tahoma, Arial, Verdana, sans-serif;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.index {
+	width: 100%;
+	height: 100%;
+}
+
+.index th {
+	height: 60px;
+	background: url(../images/index.gif) 0px 0px repeat-x;
+}
+
+.index td {
+	vertical-align: top;
+}
+
+.index .input th {
+	height: 40px;
+	background-image: none;
+}
+
+.index .input td {
+	vertical-align: middle;
+}
+
+.index .logo {
+	width: 160px;
+	vertical-align: middle;
+}
+
+.index .nav {
+	width: 700px;
+	height: 30px;
+	float: left;
+	padding-top: 30px;
+	white-space: nowrap;
+}
+
+.index .nav li {
+	width: 70px;
+	float: left;
+	padding: 0px 5px;
+	background: url(../images/index.gif) right -60px no-repeat;
+}
+
+.index .nav li a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #488bd1;
+	text-align: center;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+}
+
+.index .nav li a:hover, .index li a.current {
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 2px solid #0099cc;
+}
+
+.index .link {
+	height: 29px;
+	line-height:29px;
+	float: right;
+	clear: right;
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.index .link a {
+	padding: 0px 6px;
+}
+
+.index .menu {
+	width: 200px;
+	border-right: 1px solid #a3c4d7;
+	background-color: #f5faff;
+}
+
+.index .menu dl {
+	padding: 0px 6px;
+	display: none;
+}
+
+.index .menu .default {
+	display: block;
+}
+
+.index .menu dt {
+	height: 26px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #333333;
+	padding-left: 10px;
+	border-bottom: 1px dashed #b7d3e1;
+}
+
+.index .menu dd a {
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	padding-left: 10px;
+	color: #666666;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+}
+
+.index .menu dd a:hover {
+	background-color: #eaf4ff;
+}
+
+.index .menu dd a.current {
+	background-color: #e4f2fa;
+}
+
+.index .powered {
+	font-size: 11px;
+	text-align: right;
+	color: #cccccc;
+}
+
+.index iframe {
+	width: 100%;
+	height: 100%;
+	display: none;
+}

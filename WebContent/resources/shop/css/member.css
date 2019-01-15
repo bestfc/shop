@@ -1,0 +1,783 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleMember
+ * Version: 5.0
+ */
+
+/* ---------- Member ---------- */
+
+.member .pagePrice {
+	color: #e61f19;
+	font-weight: bold;
+	display: block;
+}
+
+.member .tdCenter {
+	text-align: center;
+}
+
+.member .memberInfo {
+	line-height: 30px;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	border: 1px solid #dddddd;
+}
+
+.member .menu {
+	margin-bottom: 10px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.member .menu h2 {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 12px;
+	font-size: 14px;
+	background-color: #f35957;
+}
+
+.member .menu h2 a {
+	color: #ffffff;
+}
+
+.member .menu .current {
+	background-color: #f35957;
+	border-left: 1px solid #f35957;
+	border-right: 1px solid #f35957;
+}
+
+.member .menu .current a {
+	color: #ffffff;
+}
+
+.member .menu:last-child {
+	border-bottom: 1px solid #dddddd;
+}
+
+.member .menu dt {
+	line-height: 38px;
+	padding-left: 10px;
+	color: #333333;
+	font-size: 14px;
+	border: 1px solid #dddddd;
+	background-color: #fcfcfc;	
+}
+
+.member .menu dd {
+	line-height: 36px;
+	padding-left: 10px;
+	color: #999999;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+
+.member .menu dd:hover {
+	color: #ffffff;
+	background-color: #f35950;
+	border-left: 1px solid #f35950;
+	border-right: 1px solid #f35950;
+}
+
+.member .menu dd a {
+	display: block;
+	color: #999999;
+	outline: none;
+}
+
+.member .menu dd a:hover {
+	color: #ffffff;
+}
+
+.member div.list {
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #e8e8e8;
+}
+
+.member div.list .bar {
+	height: 30px;
+	padding: 6px 0px 5px 0px;
+	border-top: 1px solid #e8e8e8;
+}
+
+.member div.list .title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 2px;
+	font-weight: bold;
+}
+
+.member div.list .title span {
+	color: #999999;
+}
+
+.member div.list .thumbnail {
+	width: 99px;
+	height: 40px;
+}
+
+.member div.list .productThumbnail {
+	width: 60px;
+	height: 60px;
+}
+
+.member div.list p {
+	padding: 10px 0px;
+	color: #999999;
+	text-align: center;
+}
+
+.member table.list {
+	width: 100%;
+}
+
+.member table.list .rightBorder {
+	border-right: 1px solid #e8e8e8; 
+}
+
+.member table.list tbody tr {
+	border-top: 1px solid #e8e8e8;
+	border-bottom: none;
+}
+
+.member table.list th {
+	height: 40px;
+	padding: 0px 4px;
+	color: #888888;
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member table.list td {
+	line-height: 40px;
+	padding: 6px 6px 6px 4px;
+}
+
+.member table.list .last {
+	border-bottom: none;
+}
+
+.member div.input {
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #e8e8e8;
+}
+
+.member div.input .title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 2px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member table.input {
+	width: 100%;
+}
+
+.member table.input th {
+	width: 100px;
+	line-height: 30px;
+	padding: 4px 10px 4px 0px;
+	font-weight: normal;
+	text-align: right;
+	color: #888888;
+	white-space: nowrap;
+}
+
+.member table.input td {
+	line-height: 30px;
+	padding: 4px;
+}
+
+.member .index .top {
+	width: 988px;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.08);
+	border: 1px solid #dddddd;
+	background-color: #fefefe;
+}
+
+.member .index .top div {
+	width: 100%;
+}
+
+.member .index .top ul {
+	width: 100%;
+	height: 71px;
+	margin: 15px 0px;
+}
+
+.member .index .top li {
+	line-height: 30px;
+	width: 120px;
+	height: 71px;
+	color: #999999;
+	float: left;
+}
+
+.member .index .top .payment {
+	background: url(../images/membercenter.gif) 0px 0px no-repeat;
+}
+
+.member .index .top .payment:hover {
+	background: url(../images/membercenter.gif) 0px -71px no-repeat;
+}
+
+.member .index .top .shipment {
+	background: url(../images/membercenter.gif) -120px 0px no-repeat;
+}
+
+.member .index .top .shipment:hover {
+	background: url(../images/membercenter.gif) -120px -71px no-repeat;
+}
+
+.member .index .top .messageCount {
+	background: url(../images/membercenter.gif) -240px 0px no-repeat;
+}
+
+.member .index .top .messageCount:hover {
+	background: url(../images/membercenter.gif) -240px -71px no-repeat;
+}
+
+.member .index .top .couponCode {
+	background: url(../images/membercenter.gif) -360px 0px no-repeat;
+}
+
+.member .index .top .couponCode:hover {
+	background: url(../images/membercenter.gif) -360px -71px no-repeat;
+}
+
+.member .index .top .productFavorite {
+	background: url(../images/membercenter.gif) -480px 0px no-repeat;
+}
+
+.member .index .top .productFavorite:hover {
+	background: url(../images/membercenter.gif) -480px -71px no-repeat;
+}
+
+.member .index .top .productNotify {
+	background: url(../images/membercenter.gif) -600px 0px no-repeat;
+}
+
+.member .index .top .productNotify:hover {
+	background: url(../images/membercenter.gif) -600px -71px no-repeat;
+}
+
+.member .index .top .review {
+	background: url(../images/membercenter.gif) -720px 0px no-repeat;
+}
+
+.member .index .top .review:hover {
+	background: url(../images/membercenter.gif) -720px -71px no-repeat;
+}
+
+.member .index .top .consultation {
+	background: url(../images/membercenter.gif) -840px 0px no-repeat;
+}
+
+.member .index .top .consultation:hover {
+	background: url(../images/membercenter.gif) -840px -71px no-repeat;
+}
+
+.member .index .top strong {
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.member .index .top em {
+	color: #ff6600;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.member .index .top a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 45px;
+}
+
+.member .order .dialog {
+	width: 600px;
+	height: 280px;
+	line-height: 28px;
+	padding: 0px 10px;
+	margin-left: -316px;
+	display: none;
+	position: fixed;
+	_position: absolute;
+	top: 25%;
+	_top: expression(documentElement.scrollTop + Math.round(documentElement.offsetHeight * 0.25));
+	left: 50%;
+	z-index: 100;
+	color: #888888;
+	border: solid 6px #ededed;
+	background-color: #ffffff;
+}
+
+.member .order .dialog .close {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	background: url(../images/member.gif) 0px -90px no-repeat;
+}
+
+.member .order .dialog .close:hover {
+	background-position: -30px -90px;
+}
+
+.member .order .dialog ul {
+	height: 30px;
+	line-height: 30px;
+	clear: both;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member .order .dialog li {
+	width: 150px;
+	float: left;
+}
+
+.member .order .dialog .transitSteps {
+	height: 240px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.member .order .dialog .transitSteps table {
+	width: 100%;
+}
+
+.member .order .dialog .transitSteps th {
+	width: 150px;
+	color: #aaaaaa;
+	font-weight: normal;
+	text-align: left;
+}
+
+.member .order .top {
+	height: 100px;
+	padding: 2px 20px;
+	margin-bottom: 10px;
+	border: 1px solid #eed97c;
+	background-color: #fffceb;
+}
+
+.member .order .top span {
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	float: left;
+	font-size: 14px;
+}
+
+.member .order .top strong {
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.member .order .top .action {
+	float: right;
+	padding: 10px 0px;
+}
+
+.member .order .top .tips {
+	height: 49px;
+	line-height: 49px;
+	clear: both;
+	color: #888888;
+	border-top: 1px dotted #eed97c;
+}
+
+.member .order .top .tips em {
+	color: #ff9900;
+	font-weight: normal;
+}
+
+.member .order .info {
+	width: 100%;
+	line-height: 36px;
+	margin-bottom: 10px;
+	border: 1px solid #e8e8e8;
+}
+
+.member .order .info th {
+	width: 120px;
+	padding-right: 10px;
+	color: #222222;
+	font-weight: normal;
+	text-align: right;
+}
+
+.member .order .orderItem {
+	width: 100%;
+	line-height: 40px;
+	border: 1px solid #e8e8e8;
+}
+
+.member .order .orderItem th {
+	padding-left: 10px;
+	font-weight: normal;
+	text-align: left;
+	background-color: #fafafa;
+}
+
+.member .order .orderItem td {
+	padding-left: 10px;
+}
+
+.member .index .memberLeft {
+	width: 600px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.member .index .memberRight {
+	width: 390px;
+	float: right;
+	margin-bottom: 10px;
+}
+
+.member .index .memberLeft .leftTitle {
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e8e8e8;
+	border-right: none;
+}
+
+.member .index .memberLeft .leftTitle p {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.member .index .memberLeft .leftTitle span {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	padding-right: 10px;
+}
+
+.member .index .memberLeft .leftTitle span a {
+	color: #aaaaaa;
+}
+
+.member .index .memberRight .rightTitle {
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e8e8e8;
+}
+
+.member .index .memberRight .rightTitle p {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.member .index .memberRight .rightTitle span {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	padding-right: 10px;
+}
+
+.member .index .memberRight .rightTitle span a {
+	color: #aaaaaa;
+}
+
+.member .index .memberLeft .leftMain {
+	min-height: 240px;
+	border-left: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member .index .last {
+	border-bottom: none !important;
+}
+
+.member .index .noResult {
+	line-height: 240px;
+	display: block;
+	color: #aaaaaa;
+	text-align: center;
+}
+
+.member .index .memberRight .rightMain {
+	min-height: 240px;
+	border: 1px solid #e8e8e8;
+	border-top: none;
+}
+
+.member .index .memberLeft .leftMain tr {
+	height: 80px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member .index .memberRight .rightMain tr {
+	height: 80px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member .index .memberLeft .leftMain td {
+	text-align: center;
+}
+
+.member .index .memberLeft .leftMain .orderName {
+	width: 160px;
+	text-align: left;
+}
+
+.member .index .memberLeft .leftMain .orderPrice {
+	width: 65px;
+	text-align: center;
+	padding: 0px 10px;
+}
+
+.member .index .memberLeft .leftMain .orderDate {
+	width: 80px;
+	text-align: center;
+	padding: 0px 10px;
+}
+
+.member .index .memberLeft .leftMain .orderList {
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f35957;
+	color: #ffffff;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.member .index .memberLeft .leftMain .checkType {
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #009944;
+	color: #ffffff;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.member .index .productThumbnail {
+	width: 60px;
+	height: 60px;
+	padding-left: 5px;
+}
+
+.member .message {
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #e8e8e8;
+}
+
+.member .message .title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 14px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.member .message dl {
+	max-height: 600px;
+	_height: expression(document.body.clientWidth >= 600 ? "600px": "auto");
+	padding: 0px 10px;
+	overflow: auto;
+	position: relative;
+}
+
+.member .message dt strong {
+	line-height: 36px;
+	margin-right: 10px;
+	color: #0066cc;
+}
+
+.member .message dt span {
+	line-height: 36px;
+	color: #bbbbbb;
+}
+
+.member .message dd {
+	padding: 10px 0px;
+	color: #666666;
+	overflow: hidden;
+	*zoom: 1;
+	word-wrap: break-word;
+	word-break: normal;
+}
+
+.member .message dd span {
+	line-height: 26px;
+	float: right;
+	clear: both;
+	padding: 0px 10px;
+	color: inherit;
+}
+
+.member .message dd .left {
+	float: left;
+	position: relative;
+	border: 1px solid #d8e1ea;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 2px #e0e0e0;
+	-moz-box-shadow: 0px 1px 2px #e0e0e0;
+	box-shadow: 0px 1px 2px #e0e0e0;
+}
+
+.member .message dd .left .arrow {
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	left: 20px;
+	top: -8px;
+	background: url(../images/message.gif) 0px 0px no-repeat;
+}
+
+.member .message dd .right {
+	float: right;
+	position: relative;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 2px #e0e0e0;
+	-moz-box-shadow: 0px 1px 2px #e0e0e0;
+	box-shadow: 0px 1px 2px #e0e0e0;
+	background-color: #38ADFF;
+	color: #ffffff;
+}
+
+.member .message dd .right .arrow {
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: -8px;
+	_bottom: -14px;
+	background: url(../images/message.gif) -30px 0px no-repeat;
+}
+
+.member .message dd p {
+	line-height: 24px;
+	min-width: 300px;
+	max-width: 600px;
+	padding: 6px;
+	color: inherit;
+}
+
+.member .deposit .paymentPlugin {
+	padding: 10px;
+	border: solid 4px #e8e8e8;
+}
+
+.member .deposit .paymentPlugin div {
+	float: left;
+	margin: 4px 14px;
+}
+
+.member .deposit .paymentPlugin input {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 6px;
+	margin-top: 9px;
+}
+
+.member .deposit .paymentPlugin em {
+	width: 100px;
+	height: 30px;
+	display: block;
+	float: left;
+	padding: 2px 8px;
+	color: #666666;
+	font-style: normal;
+	overflow: hidden;
+	cursor: pointer;
+	border: solid 1px #dddddd;
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.member .deposit .paymentPlugin em:hover {
+	border: solid 1px #ffaa33;
+}
+
+.orderList {
+	margin-bottom: 10px;
+}
+
+.orderList thead {
+	border-top: 1px solid #dddddd;
+}
+
+.orderList tbody {
+	border: 1px solid #dddddd;
+}
+
+.orderList tr {
+	line-height: 40px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.orderList tbody span {
+	margin-left: 15px;
+}
+
+.orderList .productTr {
+	line-height: 80px;
+}
+
+.orderList .firstTd {
+	padding-left: 15px;
+}
+
+.orderList .productBorder {
+	border-right: 1px solid #dddddd;
+}
+
+.member .row .list .delete {
+	margin-left: 10px;
+}

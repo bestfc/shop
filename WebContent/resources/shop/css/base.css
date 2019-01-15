@@ -1,0 +1,10 @@
+
+a:link, a:visited, a:active { text-decoration: none;}
+a:hover { color: #C81623; text-decoration: none;}
+.w120 { width:120px !important;}
+
+/* 常用标准按钮样式定义
+-------------------------------------------*/
+a.ncbtn-mini,
+a.ncbtn { font: normal 12px/20px "microsoft yahei", arial; color: #FFF; background-color: #CCD0D9; text-align: center; vertical-align: middle; display: inline-block; *display: inline; height: 20px; padding: 5px 10px; border-radius: 3px; cursor: pointer; *zoom: 1;}
+

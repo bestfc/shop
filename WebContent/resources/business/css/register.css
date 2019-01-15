@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleRegister
+ * Version: 5.0
+ */
+
+/* ---------- Register ---------- */
+.register {
+	background: url(../images/register.png) top center no-repeat;
+}
+
+.register header .header-top {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register header .header-main {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.register header .header-main .nav a {
+	color: #ffffff;
+}
+
+.register header .header-main .nav a:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.register .panel {
+	margin: 20px 0px 100px 0px;
+	-webkit-transition: box-shadow 0.3s, border-color 0.3s;
+	transition: box-shadow 0.3s, border-color 0.3s;
+	border: 1px solid #e8e8e8;
+}
+
+.register .panel:hover {
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	border-color: #d8d8d8;
+}
+
+.register .panel .panel-heading {
+	border-bottom: 1px solid #eeeeee;
+	background-color: #ffffff;
+}
+
+.register .panel .panel-heading .panel-title h1 {
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.register .panel .panel-footer {
+	border-top: 1px solid #eeeeee;
+	background-color: #ffffff;
+}

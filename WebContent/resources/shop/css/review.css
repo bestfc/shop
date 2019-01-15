@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleReview
+ * Version: 5.0
+ */
+
+/* ---------- Review ---------- */
+
+.review .info {
+	width: 100%;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.review .info th {
+	width: 80px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.review .info .action {
+	width: 120px;
+	text-align: right;
+}
+
+.review .info img {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #e4e4e4;
+}
+
+.review .info strong {
+	color: #ef0101;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.review .info del {
+	color: #a5a5a5;
+	text-decoration: line-through;
+}
+
+.review .info div {
+	float: left;
+	margin-right: 6px;
+}
+
+.review .content {
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	border: 1px solid #e4e4e4;
+}
+
+.review .content table {
+	width: 100%;
+	line-height: 24px;
+}
+
+.review .content table th {
+	padding: 6px 0px;
+	color: #888888;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px dotted #e4e4e4;
+}
+
+.review .content table td {
+	width: 160px;
+	padding-left: 10px;
+	border-bottom: 1px dotted #e4e4e4;
+}
+
+.review .content table .last th, .review .content table .last td {
+	border-bottom: none;
+}
+
+.review .content span {
+	color: #999999;
+}
+
+.review .content p {
+	padding: 10px 0px;
+	color: #888888;
+}
+
+.review .add {
+	margin-bottom: 10px;
+}
+
+.review .add table {
+	width: 100%;
+	line-height: 24px;
+}
+
+.review .add th {
+	width: 74px;
+	font-weight: normal;
+	text-align: right;
+}
+
+.review .add td {
+	padding: 4px;
+}
+
+.review .add .tips {
+	line-height: 22px;
+	padding-left: 4px;
+	color: #ff6600;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.review .add .star-rating a {
+	width: 23px;
+	height: 22px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	text-indent: -999em;
+	background: url(../images/review.gif) -30px -30px no-repeat;
+}
+
+.review .add .star-rating-hover a {
+	background-position: -60px -30px;
+}
+
+.review .add .star-rating-on a {
+	background-position: -90px -30px;
+}
+
+.review .dropdownMenu {
+	float: left;
+	position: relative;
+	_z-index: 10;
+}
+
+.review .dropdownMenu span {
+	width: 100px;
+	height: 22px;
+	line-height: 22px;
+	display: block;
+	padding: 0px 6px;
+	cursor: default;
+	border: solid 1px #dddddd;
+	background: url(../images/product.gif) right -330px no-repeat;
+}
+
+.review .dropdownMenu ul{
+	width:110px;
+}

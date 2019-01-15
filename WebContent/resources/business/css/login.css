@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleLogin
+ * Version: 5.0
+ */
+
+/* ---------- Login ---------- */
+.login {
+	background-color: #000000;
+}
+
+.login main {
+	padding: 100px 0px;
+	background: url(../images/login.png) center center no-repeat;
+}
+
+.login main .box {
+	padding: 30px 30px 0px 30px;
+	color: #ffffff;
+	border-radius: 0px;
+	border: none;
+	background-color: #333333;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login main .box .help-block {
+	color: #ffffff;
+}
+
+.login main .box .input-group .input-group-addon {
+	color: #ffffff;
+	border: none;
+	background-color: #888888;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login main .box input {
+	color: #ffffff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	border-radius: 0px;
+	border: none;
+	background-color: #666666;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.login main .box input:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login main .box input:focus {
+	box-shadow: none;
+}
+
+.login main .box input::-webkit-input-placeholder {
+	color: #dddddd;
+}
+
+.login main .box input::-moz-input-placeholder {
+	color: #dddddd;
+}
+
+.login main .box input::-ms-input-placeholder {
+	color: #dddddd;
+}
+
+.login main .box label {
+	color: #ffffff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.login main .box a {
+	color: #ffffff;
+}
+
+.login main .box .btn-primary {
+	height: 35px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	border: none;
+}

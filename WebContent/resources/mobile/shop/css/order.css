@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2017 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * StyleOrder
+ * Version: 5.0
+ */
+
+/* ---------- OrderCheckout ---------- */
+.order-checkout .page {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 100;
+	background-color: #ffffff;
+}
+
+.order-checkout .page .page-body {
+	width: 100%;
+	padding: 40px 0px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+.order-checkout .page .page-body .glyphicon {
+	color: #cccccc;
+}
+
+.order-checkout .page .page-body .glyphicon.active {
+	color: #dd0000;
+}
+
+.order-checkout .page .page-body .glyphicon-map-marker {
+	font-size: 16px;
+}
+
+.order-checkout .page .page-body .glyphicon-check {
+	font-size: 16px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.order-checkout .page .page-body .glyphicon-ok-circle {
+	font-size: 18px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.order-checkout .page .page-body .selection .list-group-item.active .glyphicon-ok-circle {
+	color: #dd0000;
+}
+
+.order-checkout .main-page {
+	display: block;
+	background-color: #fafafa;
+}
+
+.order-checkout .main-page .current-receiver {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: url(../images/order_checkout.png) bottom repeat-x #ffffff;
+	background-size: auto 5px;
+}
+
+.order-checkout .main-page .current-receiver h4 {
+	line-height: 25px;
+}
+
+.order-checkout .main-page .current-receiver strong {
+	line-height: 50px;
+}
+
+.order-checkout .main-page .coupon-name {
+	display: none;
+	padding: 2px 5px;
+	font-size: 12px;
+	border-radius: 3px;
+	border: solid 1px #dd0000;
+}
+
+.order-checkout .main-page input[type="text"] {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border: none;
+	background-color: #ffffff;
+}
+
+.order-checkout .main-page .order a {
+	font-weight: bold;
+}
+
+.order-checkout .main-page .order-item .media-left img {
+	max-width: 50px;
+	padding: 2px;
+	border: solid 1px #e8e8e8;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.order-checkout .add-receiver-page .page-body {
+	padding: 50px 10px;
+}
+
+.order-checkout .payment-method-page .media-object, .order-checkout .shipping-method-page .media-object {
+	width: 100px;
+	overflow: hidden;
+}
+
+.order-checkout .payment-method-page .media-object img, .order-checkout .shipping-method-page .media-object img {
+	max-width: 100%;
+}
+
+/* ---------- OrderPayment ---------- */
+.order-payment .modal .modal-body dl {
+	text-align: center;
+}
+
+.order-payment .modal .modal-body dl dt {
+	line-height: 35px;
+	font-size: 16px;
+}
+
+.order-payment .modal .modal-body dl dd {
+	line-height: 25px;
+	color: #888888;
+}
+
+.order-payment .modal .modal-footer {
+	text-align: center;
+}
+
+.order-payment .modal .modal-footer .btn {
+	margin-bottom: 10px;
+}
+
+.order-payment .modal .modal-footer .btn-primary {
+	margin-right: 20px;
+}
+
+.order-payment .modal .modal-footer .other-payment-method {
+	display: block;
+}
+
+.order-payment main {
+	margin: 40px 0px 0px;
+	background-color: #fafafa;
+}
+
+.order-payment main .list-group .glyphicon {
+	color: #cccccc;
+}
+
+.order-payment main .list-group .glyphicon-ok-circle {
+	font-size: 18px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.order-payment main .list-group-item.active .glyphicon-ok-circle {
+	color: #dd0000;
+}
+
+.order-payment main .fee-item {
+	display: none;
+}
+
+.order-payment main .media-object {
+	width: 100px;
+	overflow: hidden;
+}
+
+.order-payment main .media-object img {
+	max-width: 100%;
+	border: solid 1px #e8e8e8;
+}
