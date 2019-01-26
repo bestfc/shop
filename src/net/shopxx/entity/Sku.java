@@ -662,7 +662,7 @@ public class Sku extends BaseEntity<Long> {
 	 */
 	@Transient
 	public int getAvailableStock() {
-		int availableStock = getStock()getAllocatedStock();
+		int availableStock = getStock();getAllocatedStock();
 		return availableStock >= 0 ? availableStock : 0;
 	}
 

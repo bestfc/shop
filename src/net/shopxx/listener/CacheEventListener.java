@@ -55,10 +55,10 @@ public class CacheEventListener extends CacheEventListenerAdapter {
 			Long hits = (Long) element.getObjectValue();
 			Product product = productService.find(id);
 			if (product != null && hits != null && hits > 0) {
-				long amount = hitsproduct.getHits();
-				if (amount > 0) {
-					productService.addHits(product, amount);
-				}
+//				long amount = hitsproduct.getHits();
+//				if (amount > 0) {
+//					productService.addHits(product, amount);
+//				}
 			}
 		}
 	}

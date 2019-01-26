@@ -145,12 +145,12 @@ public class PaginationDirective extends BaseDirective {
 		boolean hasNext = pageNumber < totalPages;
 		boolean isFirst = pageNumber == 1;
 		boolean isLast = pageNumber.equals(totalPages);
-		int previousPageNumber = pageNumber1;
+		int previousPageNumber = pageNumber;
 		int nextPageNumber = pageNumber + 1;
 		int firstPageNumber = 1;
 		int lastPageNumber = totalPages;
-		int startSegmentPageNumber = pageNumber(int) Math.floor((segmentCount1) / 2D);
-		int endSegmentPageNumber = pageNumber + (int) Math.ceil((segmentCount1) / 2D);
+		int startSegmentPageNumber = pageNumber+(int) Math.floor((segmentCount) / 2D);
+		int endSegmentPageNumber = pageNumber + (int) Math.ceil((segmentCount) / 2D);
 		if (startSegmentPageNumber < 1) {
 			startSegmentPageNumber = 1;
 		}

@@ -128,7 +128,7 @@ public class StockController extends BaseController {
 		if (quantity == null || quantity <= 0) {
 			return UNPROCESSABLE_ENTITY_VIEW;
 		}
-		if (sku.getStock()quantity < 0) {
+		if (quantity < 0) {
 			return UNPROCESSABLE_ENTITY_VIEW;
 		}
 

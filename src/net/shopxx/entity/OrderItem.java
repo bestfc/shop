@@ -416,7 +416,7 @@ public class OrderItem extends BaseEntity<Long> {
 	 */
 	@Transient
 	public int getShippableQuantity() {
-		int shippableQuantity = getQuantity()getShippedQuantity();
+		int shippableQuantity = getQuantity()-getShippedQuantity();
 		return shippableQuantity >= 0 ? shippableQuantity : 0;
 	}
 
@@ -427,7 +427,7 @@ public class OrderItem extends BaseEntity<Long> {
 	 */
 	@Transient
 	public int getReturnableQuantity() {
-		int returnableQuantity = getShippedQuantity()getReturnedQuantity();
+		int returnableQuantity = getShippedQuantity()-getReturnedQuantity();
 		return returnableQuantity >= 0 ? returnableQuantity : 0;
 	}
 

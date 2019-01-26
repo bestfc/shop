@@ -1519,7 +1519,7 @@ public class Order extends BaseEntity<Long> {
 	@Transient
 	public int getShippableQuantity() {
 		if (!hasExpired() && Order.Status.pendingShipment.equals(getStatus())) {
-			int shippableQuantity = getQuantity()getShippedQuantity();
+			int shippableQuantity = getQuantity()-getShippedQuantity();
 			return shippableQuantity >= 0 ? shippableQuantity : 0;
 		}
 		return 0;
@@ -1533,7 +1533,7 @@ public class Order extends BaseEntity<Long> {
 	@Transient
 	public int getReturnableQuantity() {
 		if (!hasExpired() && Order.Status.failed.equals(getStatus())) {
-			int returnableQuantity = getShippedQuantity()getReturnedQuantity();
+			int returnableQuantity = getShippedQuantity()-getReturnedQuantity();
 			return returnableQuantity >= 0 ? returnableQuantity : 0;
 		}
 		return 0;

@@ -986,7 +986,7 @@ public class OrderServiceImpl extends BaseServiceImpl<Order, Long> implements Or
 			for (OrderItem orderItem : order.getOrderItems()) {
 				Sku sku = orderItem.getSku();
 				if (sku != null) {
-					skuService.addAllocatedStock(sku, orderItem.getQuantity()orderItem.getShippedQuantity());
+					skuService.addAllocatedStock(sku, orderItem.getQuantity()-orderItem.getShippedQuantity());
 				}
 			}
 		}
@@ -1007,7 +1007,7 @@ public class OrderServiceImpl extends BaseServiceImpl<Order, Long> implements Or
 			for (OrderItem orderItem : order.getOrderItems()) {
 				Sku sku = orderItem.getSku();
 				if (sku != null) {
-					skuService.addAllocatedStock(sku, -(orderItem.getQuantity()orderItem.getShippedQuantity()));
+					skuService.addAllocatedStock(sku, -(orderItem.getQuantity()-orderItem.getShippedQuantity()));
 				}
 			}
 		}

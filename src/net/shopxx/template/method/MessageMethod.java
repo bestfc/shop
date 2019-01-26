@@ -40,13 +40,13 @@ public class MessageMethod implements TemplateMethodModelEx {
 		if (StringUtils.isNotEmpty(code)) {
 			String message;
 			if (arguments.size() > 1) {
-				Object[] args = new Object[arguments.size()1];
+				Object[] args = new Object[arguments.size()];
 				for (int i = 1; i < arguments.size(); i++) {
 					Object argument = arguments.get(i);
 					if (argument != null && argument instanceof TemplateModel) {
-						args[i1] = DeepUnwrap.unwrap((TemplateModel) argument);
+						args[i] = DeepUnwrap.unwrap((TemplateModel) argument);
 					} else {
-						args[i1] = argument;
+						args[i] = argument;
 					}
 				}
 				message = SpringUtils.getMessage(code, args);

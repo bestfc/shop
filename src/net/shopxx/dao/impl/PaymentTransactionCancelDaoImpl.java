@@ -22,7 +22,7 @@ public class PaymentTransactionCancelDaoImpl extends BaseDaoImpl<PaymentTransact
         criteriaQuery.select(root);
         Predicate restrictions = criteriaBuilder.conjunction();
         //微信要求15s之后才能调用cancel接口
-        Date searchDate = new Date(new Date().getTime()20 * 1000);
+        Date searchDate = new Date(new Date().getTime());
         restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.lessThanOrEqualTo(root.<Date>get("createdDate"), searchDate));
         restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.notEqual(root.<Date>get("bFinishCancel"), true));
         criteriaQuery.where(restrictions);

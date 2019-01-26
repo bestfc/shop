@@ -54,7 +54,7 @@ public class AbbreviateMethod implements TemplateMethodModelEx {
 				break;
 			}
 		}
-		return ellipsis != null && i < str.length()1 ? StringUtils.substring(str, 0, i + 1) + ellipsis : StringUtils.substring(str, 0, i + 1);
+		return ellipsis != null && i < str.length() ? StringUtils.substring(str, 0, i + 1) + ellipsis : StringUtils.substring(str, 0, i + 1);
 	}
 
 }

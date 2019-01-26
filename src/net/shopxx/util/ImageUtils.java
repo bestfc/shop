@@ -191,7 +191,7 @@ public final class ImageUtils {
 				graphics2D = destBufferedImage.createGraphics();
 				graphics2D.setBackground(BACKGROUND_COLOR);
 				graphics2D.clearRect(0, 0, destWidth, destHeight);
-				graphics2D.drawImage(srcBufferedImage.getScaledInstance(width, height, Image.SCALE_SMOOTH), (destWidth / 2)(width / 2), (destHeight / 2)(height / 2), null);
+				graphics2D.drawImage(srcBufferedImage.getScaledInstance(width, height, Image.SCALE_SMOOTH), (destWidth / 2),(width / 2), (destHeight / 2),(height / 2), null);
 
 				imageOutputStream = ImageIO.createImageOutputStream(destFile);
 				imageWriter = ImageIO.getImageWritersByFormatName(FilenameUtils.getExtension(destFile.getName())).next();
@@ -320,24 +320,24 @@ public final class ImageUtils {
 					y = 0;
 					break;
 				case topRight:
-					x = srcWidthwatermarkImageWidth;
+					x = srcWidth-watermarkImageWidth;
 					y = 0;
 					break;
 				case center:
-					x = (srcWidthwatermarkImageWidth) / 2;
-					y = (srcHeightwatermarkImageHeight) / 2;
+					x = (srcWidth-watermarkImageWidth) / 2;
+					y = (srcHeight-watermarkImageHeight) / 2;
 					break;
 				case bottomLeft:
 					x = 0;
-					y = srcHeightwatermarkImageHeight;
+					y = srcHeight-watermarkImageHeight;
 					break;
 				case bottomRight:
-					x = srcWidthwatermarkImageWidth;
-					y = srcHeightwatermarkImageHeight;
+					x = srcWidth-watermarkImageWidth;
+					y = srcHeight-watermarkImageHeight;
 					break;
 				default:
-					x = srcWidthwatermarkImageWidth;
-					y = srcHeightwatermarkImageHeight;
+					x = srcWidth-watermarkImageWidth;
+					y = srcHeight-watermarkImageHeight;
 					break;
 				}
 				graphics2D.drawImage(watermarkBufferedImage, x, y, watermarkImageWidth, watermarkImageHeight, null);

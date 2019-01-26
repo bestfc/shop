@@ -77,7 +77,7 @@ public class SearchServiceImpl implements SearchService {
 
 		FullTextQuery fullTextQuery = fullTextEntityManager.createFullTextQuery(query, Article.class);
 		fullTextQuery.setSort(new Sort(new SortField("isTop", SortField.Type.STRING, true), new SortField(null, SortField.Type.SCORE), new SortField("createdDate", SortField.Type.LONG, true)));
-		fullTextQuery.setFirstResult((pageable.getPageNumber()1) * pageable.getPageSize());
+		fullTextQuery.setFirstResult((pageable.getPageNumber()) * pageable.getPageSize());
 		fullTextQuery.setMaxResults(pageable.getPageSize());
 		return new Page<>(fullTextQuery.getResultList(), fullTextQuery.getResultSize(), pageable);
 	}
@@ -145,7 +145,7 @@ public class SearchServiceImpl implements SearchService {
 			sortFields = new SortField[] { new SortField("isTop", SortField.Type.STRING, true), new SortField(null, SortField.Type.SCORE), new SortField("createdDate", SortField.Type.LONG, true) };
 		}
 		fullTextQuery.setSort(new Sort(sortFields));
-		fullTextQuery.setFirstResult((pageable.getPageNumber()1) * pageable.getPageSize());
+		fullTextQuery.setFirstResult((pageable.getPageNumber()) * pageable.getPageSize());
 		fullTextQuery.setMaxResults(pageable.getPageSize());
 		return new Page<>(fullTextQuery.getResultList(), fullTextQuery.getResultSize(), pageable);
 	}

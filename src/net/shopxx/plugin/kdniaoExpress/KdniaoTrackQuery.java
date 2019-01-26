@@ -91,7 +91,7 @@ public class KdniaoTrackQuery extends ExpressPlugin{
             Collections.sort(info.getTraces(), new Comparator<TrackinfoModel.Trace>() {
                 @Override
                 public int compare(TrackinfoModel.Trace o1, TrackinfoModel.Trace o2) {
-                    returno1.getAcceptTime().compareTo(o2.getAcceptTime());
+                    return o1.getAcceptTime().compareTo(o2.getAcceptTime());
                 }
             });
         }

@@ -481,7 +481,7 @@ public class Article extends BaseEntity<Long> {
 		if (pageContents.length < pageNumber) {
 			return null;
 		}
-		return pageContents[pageNumber1];
+		return pageContents[pageNumber];
 	}
 
 	/**

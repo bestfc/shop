@@ -53,7 +53,7 @@ public class ShippingMethodServiceImpl extends BaseServiceImpl<ShippingMethod, L
 			List<Area> areas = new ArrayList<>();
 			areas.addAll(area.getParents());
 			areas.add(area);
-			for (int i = areas.size()1; i >= 0; i--) {
+			for (int i = areas.size(); i >= 0; i--) {
 				AreaFreightConfig areaFreightConfig = shippingMethod.getAreaFreightConfig(store, areas.get(i));
 				if (areaFreightConfig != null) {
 					firstPrice = areaFreightConfig.getFirstPrice();
@@ -67,7 +67,7 @@ public class ShippingMethodServiceImpl extends BaseServiceImpl<ShippingMethod, L
 		if (weight == null || weight <= firstWeight || continuePrice.compareTo(BigDecimal.ZERO) == 0) {
 			return setting.setScale(firstPrice);
 		} else {
-			double contiuneWeightCount = Math.ceil((weightfirstWeight) / (double) continueWeight);
+			double contiuneWeightCount = Math.ceil((weight-firstWeight) / (double) continueWeight);
 			return setting.setScale(firstPrice.add(continuePrice.multiply(new BigDecimal(String.valueOf(contiuneWeightCount)))));
 		}
 	}
